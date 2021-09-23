@@ -1,0 +1,28 @@
+:root {
+  --bg-secondary-color: #005EAC !important;
+}
+
+.button-module__secondary {
+background: #FFFFFF !important;
+color: #303030 !important;
+border: 1px solid #F0F0F0 !important;
+box-sizing: border-box !important;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
+border-radius: 4px !important;
+}
+
+.button-module__secondary:hover {
+background: #DCF4FF !important;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
+color:  #005EAC !important;
+border: 1px solid transparent !important;
+border-radius: 4px !important;
+}
+
+.button-module__secondary:active{
+background: #AEDCF5 !important;
+ color: #005EAC !important;
+border: 1px solid transparent !important;
+box-shadow: none !important;
+border-radius: 4px !important;
+}
