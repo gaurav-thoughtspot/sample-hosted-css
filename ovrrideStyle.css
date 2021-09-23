@@ -1,6 +1,3 @@
-:root {
-  --bg-secondary-color: #005EAC !important;
-}
 
 .button-module__secondary {
 background: #FFFFFF !important;
@@ -25,4 +22,27 @@ background: #AEDCF5 !important;
 border: 1px solid transparent !important;
 box-shadow: none !important;
 border-radius: 4px !important;
+}
+
+.button-module__disabled {
+border: 1.5px solid #B0B0B0 !important;
+background: #FFFFFF !important;
+color: #B0B0B0 !important;
+}
+
+.button-module__primary {
+font-weight: 800 !important;
+background: linear-gradient(144.82deg, #0072C2 5.58%, #1792E5 93.38%) !important;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
+border-radius: 4px !important;
+color: #FFFFFF !important;
+}
+
+.button-module__primary:hover {
+background: #1DA4FF !important;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.button-module__primary:active {
+background: #0072C2 !important;
 }
