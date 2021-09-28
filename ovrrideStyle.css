@@ -1,100 +1,145 @@
 /*root variables*/
 
 :root {
-	--white-color: #FFFFFF;
-	--dark-shade-grey-color: #303030;
-	--white-smoke-color: #F0F0F0;
-	--black-shadow-color: rgba(0, 0, 0, 0.15);
-	--pale-blue-color: #DCF4FF;
-	--bright-blue-color: #005EAC;
-	--light-blue-color: #AEDCF5;
-	--dark-grey-color: #B0B0B0;
-	--sky-blue-color: #1DA4FF;
-	--faux-ocean-color: #0072C2;
+    --white-color: #FFFFFF;
+    --dark-shade-grey-color: #303030;
+    --white-smoke-color: #F0F0F0;
+    --black-shadow-color: rgba(0, 0, 0, 0.15);
+    --pale-blue-color: #DCF4FF;
+    --bright-blue-color: #005EAC;
+    --light-blue-color: #AEDCF5;
+    --dark-grey-color: #B0B0B0;
+    --sky-blue-color: #1DA4FF;
+    --faux-ocean-color: #0072C2;
+    --light-grey-color: #E0E0E0;
+    --suva-grey-color: #909090;
+    --lynx-white-color: #F7F7F7;
+    --rough-n-tumble-color: #5a4949;
+    --light-sky-blue-color: rgba(136, 221, 255, 0.15);
 }
 
-
-/* classes
+/* Button
 bk/rd-button-primary/secondary :  v1
 button-module__primary/secondary: v2
 */
 
-.rd-button-primary,
-.bk-button-primary,
-.button-module__primary {
-	font-weight: 800 !important;
-	background: linear-gradient(144.82deg, #0072C2 5.58%, #1792E5 93.38%) !important;
-	box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
-	border-radius: 4px !important;
-	color: var(--white-color);
+.rd-button-primary, .bk-button-primary, .button-module__primary {
+    font-weight: 800 !important;
+    background: linear-gradient(144.82deg, #0072C2 5.58%, #1792E5 93.38%) !important;
+    box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+    border-radius: 4px !important;
+    color: var(--white-color);
 }
 
-.rd-button-primary:hover,
-.bk-button-primary:hover,
-.button-module__primary:hover {
-	background: var(--sky-blue-color) !important;
-	box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+.rd-button-primary:hover, .bk-button-primary:hover, .button-module__primary:hover {
+    background: var(--sky-blue-color) !important;
 }
 
-.rd-button-primary:active,
-.bk-button-primary:active,
-.button-module__primary:active {
-	background: var(--faux-ocean-color) !important;
+.rd-button-primary:active, .bk-button-primary:active, .button-module__primary:active {
+    background: var(--faux-ocean-color) !important;
 }
 
-.rd-button-primary[disabled],
-.bk-button-primary[disabled],
-.button-module__primary[disabled],
-.bk-disabled-button.bk-primary-button {
-	background: var(--dark-grey-color) !important;
-	border-radius: 4px !important;
-	color: var(--white-color);
+.rd-button-primary[disabled], .bk-button-primary[disabled], .button-module__primary[disabled], .bk-disabled-button.bk-primary-button {
+    background: var(--dark-grey-color) !important;
+    border-radius: 4px !important;
+    color: var(--white-color);
 }
 
-.rd-button-secondary,
-.bk-secondary-button,
-.button-module__secondary {
-	background: var(--white-color) !important;
-	color: var(--dark-shade-grey-color) !important;
-	border: 1px solid var(--white-smoke-color) !important;
-	box-sizing: border-box !important;
-	box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
-	border-radius: 4px !important;
+.rd-button-secondary, .bk-secondary-button, .button-module__secondary {
+    background: var(--white-color) !important;
+    color: var(--dark-shade-grey-color) !important;
+    border: 1px solid var(--white-smoke-color) !important;
+    box-sizing: border-box !important;
+    box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+    border-radius: 4px !important;
 }
 
-.rd-button-secondary:hover,
-.bk-secondary-button:hover,
-.button-module__secondary:hover {
-	background: var(--pale-blue-color) !important;
-	box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
-	color: var(--bright-blue-color) !important;
-	border: 1px solid transparent !important;
-	border-radius: 4px !important;
+.rd-button-secondary:hover, .bk-secondary-button:hover, .button-module__secondary:hover {
+    background: var(--pale-blue-color) !important;
+    color: var(--bright-blue-color) !important;
+    border: 1px solid transparent !important;
 }
 
-.rd-secondary-button:active,
-.bk-secondary-button:active,
-.button-module__secondary:active {
-	background: var(--light-blue-color:) !important;
-	color: var(--bright-blue-color) !important;
-	border: 1px solid transparent !important;
-	box-shadow: none !important;
-	border-radius: 4px !important;
+.rd-secondary-button:active, .bk-secondary-button:active, .button-module__secondary:active {
+    background: var(--light-blue-color) !important;
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
 }
 
-.rd-secondary-button[disabled],
-.bk-secondary-button[disabled],
-.button-module__disabled,
-.bk-disabled-button.bk-secondary-button {
-	border: 1.5px solid var(--dark-grey-color) !important;
-	background: var(--white-color);
-	color: var(--dark-grey-color) !important;
-	pointer-events: none;
+.rd-secondary-button[disabled], .bk-secondary-button[disabled], .button-module__disabled, .bk-disabled-button.bk-secondary-button {
+    border: 1.5px solid var(--dark-grey-color) !important;
+    background: var(--white-color);
+    color: var(--dark-grey-color) !important;
+    pointer-events: none;
 }
-
 
 /*develop tab see in live btn */
 
 .button-module__primary>.button-module__buttonText {
-	color: var(--white-color);
+    color: var(--white-color);
+}
+
+/*select 
+.bk: v1
+.select-module: v2
+*/
+
+.bk-select-visibility {
+    border: none !important;
+}
+
+.bk-select-head, .select-module__selectHead {
+    border: 1px solid var(--light-grey-color) !important;
+    box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+    border-bottom-right-radius: 4px !important;
+    border-radius: 4px !important;
+    background-color: var(--white-color) !important;
+    font: 16px !important;
+    color: var(--dark-shade-grey-color) !important;
+}
+
+.bk-select-head::after {
+    border-bottom: none !important;
+}
+
+.bk-select-head:active, .bk-select-head:hover, .select-module__selectHead:hover, .select-module__selectHead:active {
+    border: 1px solid var(--suva-grey-color) !important;
+}
+
+;
+/* select disabled */
+
+.bk-select-head.bk-disabled, .bk-dropdown-item-disabled, .select-module__selectHead[disabled] {
+    color: var(--dark-grey-color) !important;
+    background: var(--lynx-white-color) !important;
+}
+
+/* dropdown up icon caret background */
+
+.select-module__selectOpen> [data-radiant-v2].icon-module__gray, .bk-select.bk-dropdown-open .dropdown-caret {
+    background: var(--light-blue-color) !important;
+    border-radius: 4px !important;
+}
+
+/* select-v2 menu option wrapper */
+
+.menu-module__menuGroupWrapper {
+    border: 1px solid var(--light-grey-color) !important;
+    box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+    border-bottom-right-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+.bk-action-menu, .menu-module__actionMenu {
+    background: var(--white-smoke-color) !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.bk-dropdown-item-info:hover, .bk-dropdown-item-container :hover, .menu-module__itemInfo:hover {
+    background: var(--light-sky-blue-color) !important;
+}
+
+.bk-dropdown-item-info:hover >.bk-dropdown-text, .menu-module__itemInfo:hover> .menu-module__itemText > p {
+    color: var(--bright-blue-color) !important;
 }
