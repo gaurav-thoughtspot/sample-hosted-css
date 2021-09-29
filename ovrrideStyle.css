@@ -1,20 +1,20 @@
 /*root variables*/
 :root {
-  --white-color: #ffffff;
-  --dark-shade-grey-color: #303030;
-  --white-smoke-color: #f0f0f0;
   --black-shadow-color: rgba(0, 0, 0, 0.15);
-  --pale-blue-color: #dcf4ff;
-  --bright-blue-color: #005eac;
-  --light-blue-color: #aedcf5;
-  --dark-grey-color: #b0b0b0;
-  --sky-blue-color: #1da4ff;
-  --faux-ocean-color: #0072c2;
-  --light-grey-color: #e0e0e0;
-  --suva-grey-color: #909090;
-  --lynx-white-color: #f7f7f7;
-  --rough-n-tumble-color: #5a4949;
+  --btn-gradients-light-hover-quiet-color: #dcf4ff;
+  --btn-gradients-light-pressed-color: #aedcf5;
+  --btn-gradients-light-hover-color: #1da4ff;
+  --blue-n1-color: #0072c2;
+  --grey-p1-color: #909090;
+  --grey-p5-color: #303030;
+  --grey-p6-color: #e0e0e0;
+  --grey-p7-color: #f0f0f0;
+  --grey-p8-color: #f7f7f7;
+  --grey-p9-color: #ffffff;
+  --grey-p3-color: #b0b0b0;
+  --icon-light-blue-color: #005eac;
   --light-sky-blue-color: rgba(136, 221, 255, 0.15);
+  --rough-n-tumble-color: #5a4949;
 }
 
 /* Button
@@ -33,36 +33,36 @@ button-module__primary/secondary: v2
   ) !important;
   box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
   border-radius: 4px !important;
-  color: var(--white-color);
+  color: var( --grey-p9-color);
 }
 
 .rd-button-primary:hover,
 .bk-button-primary:hover,
 .button-module__primary:hover {
-  background: var(--sky-blue-color) !important;
+  background: var(--btn-gradients-light-hover-color) !important;
 }
 
 .rd-button-primary:active,
 .bk-button-primary:active,
 .button-module__primary:active {
-  background: var(--faux-ocean-color) !important;
+  background: var(--blue-n1-color) !important;
 }
 
 .rd-button-primary[disabled],
 .bk-button-primary[disabled],
 .button-module__primary[disabled],
 .bk-disabled-button.bk-primary-button {
-  background: var(--dark-grey-color) !important;
+  background: var(--grey-p3-color) !important;
   border-radius: 4px !important;
-  color: var(--white-color);
+  color: var( --grey-p9-color);
 }
 
 .rd-button-secondary,
 .bk-secondary-button,
 .button-module__secondary {
-  background: var(--white-color) !important;
-  color: var(--dark-shade-grey-color) !important;
-  border: 1px solid var(--white-smoke-color) !important;
+  background: var( --grey-p9-color) !important;
+  color: var(--grey-p5-color) !important;
+  border: 1px solid var(--grey-p7-color) !important;
   box-sizing: border-box !important;
   box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
   border-radius: 4px !important;
@@ -71,15 +71,15 @@ button-module__primary/secondary: v2
 .rd-button-secondary:hover,
 .bk-secondary-button:hover,
 .button-module__secondary:hover {
-  background: var(--pale-blue-color) !important;
-  color: var(--bright-blue-color) !important;
+  background: var(--btn-gradients-light-hover-quiet-color) !important;
+  color: var(--icon-light-blue-color) !important;
   border: 1px solid transparent !important;
 }
 
 .rd-secondary-button:active,
 .bk-secondary-button:active,
 .button-module__secondary:active {
-  background: var(--light-blue-color) !important;
+  background: var(--btn-gradients-light-pressed-color) !important;
   border: 1px solid transparent !important;
   box-shadow: none !important;
 }
@@ -88,15 +88,15 @@ button-module__primary/secondary: v2
 .bk-secondary-button[disabled],
 .button-module__disabled,
 .bk-disabled-button.bk-secondary-button {
-  border: 1.5px solid var(--dark-grey-color) !important;
-  background: var(--white-color);
-  color: var(--dark-grey-color) !important;
+  border: 1.5px solid var(--grey-p3-color) !important;
+  background: var( --grey-p9-color);
+  color: var(--grey-p3-color) !important;
   pointer-events: none;
 }
 
 /*develop tab see in live btn */
 .button-module__primary > .button-module__buttonText {
-  color: var(--white-color);
+  color: var( --grey-p9-color);
 }
 
 /*select 
@@ -109,13 +109,13 @@ button-module__primary/secondary: v2
 
 .bk-select-head,
 .select-module__selectHead {
-  border: 1px solid var(--light-grey-color) !important;
+  border: 1px solid var(--grey-p6-color) !important;
   box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
   border-bottom-right-radius: 4px !important;
   border-radius: 4px !important;
-  background-color: var(--white-color) !important;
+  background-color: var( --grey-p9-color) !important;
   font: 16px !important;
-  color: var(--dark-shade-grey-color) !important;
+  color: var(--grey-p5-color) !important;
 }
 
 .bk-select-head::after {
@@ -126,27 +126,27 @@ button-module__primary/secondary: v2
 .bk-select-head:hover,
 .select-module__selectHead:hover,
 .select-module__selectHead:active {
-  border: 1px solid var(--suva-grey-color) !important;
+  border: 1px solid var(--grey-p1-color) !important;
 }
 
 /* select disabled */
 .bk-select-head.bk-disabled,
 .bk-dropdown-item-disabled,
 .select-module__selectHead[disabled] {
-  color: var(--dark-grey-color) !important;
-  background: var(--lynx-white-color) !important;
+  color: var(--grey-p3-color) !important;
+  background: var(--grey-p8-color) !important;
 }
 
 /* dropdown up icon caret background */
 .select-module__selectOpen > [data-radiant-v2].icon-module__gray,
 .bk-select.bk-dropdown-open .dropdown-caret {
-  background: var(--light-blue-color) !important;
+  background: var(--btn-gradients-light-pressed-color) !important;
   border-radius: 4px !important;
 }
 
 .bk-action-menu,
 .select-module__popoverWrapper > .menu-module__actionMenu {
-  background: var(--white-smoke-color) !important;
+  background: var(--grey-p7-color) !important;
   padding-bottom: 0 !important;
   padding-top: 0 !important;
 }
@@ -156,9 +156,9 @@ button-module__primary/secondary: v2
   .input-base-module__container {
   border: none !important;
   padding-left: 14px;
-  background: var(--white-smoke-color) !important;
+  background: var(--grey-p7-color) !important;
   border-radius: 0 !important;
-  border-bottom: 2px solid var(--light-grey-color) !important;
+  border-bottom: 2px solid var(--grey-p6-color) !important;
 }
 
 .select-module__popoverWrapper > .input-text-module__container {
@@ -173,5 +173,5 @@ button-module__primary/secondary: v2
 
 .bk-dropdown-item-info:hover > .bk-dropdown-text,
 .menu-module__itemInfo:hover > .menu-module__itemText > p {
-  color: var(--bright-blue-color) !important;
+  color: var(--icon-light-blue-color) !important;
 }
