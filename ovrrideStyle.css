@@ -1,4 +1,5 @@
 /*root variables*/
+
 :root {
   --black-shadow-color: rgba(0, 0, 0, 0.15);
   --btn-gradients-light-hover-quiet-color: #dcf4ff;
@@ -33,7 +34,7 @@ button-module__primary/secondary: v2
   ) !important;
   box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
   border-radius: 4px !important;
-  color: var( --grey-p9-color);
+  color: var(--grey-p9-color);
 }
 
 .rd-button-primary:hover,
@@ -54,13 +55,13 @@ button-module__primary/secondary: v2
 .bk-disabled-button.bk-primary-button {
   background: var(--grey-p3-color) !important;
   border-radius: 4px !important;
-  color: var( --grey-p9-color);
+  color: var(--grey-p9-color);
 }
 
 .rd-button-secondary,
 .bk-secondary-button,
 .button-module__secondary {
-  background: var( --grey-p9-color) !important;
+  background: var(--grey-p9-color) !important;
   color: var(--grey-p5-color) !important;
   border: 1px solid var(--grey-p7-color) !important;
   box-sizing: border-box !important;
@@ -89,31 +90,37 @@ button-module__primary/secondary: v2
 .button-module__disabled,
 .bk-disabled-button.bk-secondary-button {
   border: 1.5px solid var(--grey-p3-color) !important;
-  background: var( --grey-p9-color);
+  background: var(--grey-p9-color);
   color: var(--grey-p3-color) !important;
   pointer-events: none;
 }
 
 /*develop tab see in live btn */
+
 .button-module__primary > .button-module__buttonText {
-  color: var( --grey-p9-color);
+  color: var(--grey-p9-color);
 }
 
-/*select 
+/*select and filter chips
 .bk: v1
-.select-module: v2
+.select-module: 
+rd-chip-wrapper: pinboard v1
+chip-base-module: answer v2
 */
+
 .bk-select-visibility {
   border: none !important;
 }
 
 .bk-select-head,
-.select-module__selectHead {
+.select-module__selectHead,
+.rd-chip-wrapper,
+.chip-base-module__filter {
   border: 1px solid var(--grey-p6-color) !important;
   box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
   border-bottom-right-radius: 4px !important;
   border-radius: 4px !important;
-  background-color: var( --grey-p9-color) !important;
+  background-color: var(--grey-p9-color) !important;
   font: 16px !important;
   color: var(--grey-p5-color) !important;
 }
@@ -125,11 +132,14 @@ button-module__primary/secondary: v2
 .bk-select-head:active,
 .bk-select-head:hover,
 .select-module__selectHead:hover,
-.select-module__selectHead:active {
+.select-module__selectHead:active,
+.rd-chip-wrapper:hover,
+.chip-base-module__filter:hover {
   border: 1px solid var(--grey-p1-color) !important;
 }
 
 /* select disabled */
+
 .bk-select-head.bk-disabled,
 .bk-dropdown-item-disabled,
 .select-module__selectHead[disabled] {
@@ -138,6 +148,7 @@ button-module__primary/secondary: v2
 }
 
 /* dropdown up icon caret background */
+
 .select-module__selectOpen > [data-radiant-v2].icon-module__gray,
 .bk-select.bk-dropdown-open .dropdown-caret {
   background: var(--btn-gradients-light-pressed-color) !important;
@@ -152,8 +163,7 @@ button-module__primary/secondary: v2
 }
 
 .select-module__popoverWrapper
-  > [data-radiant-v2]
-  .input-base-module__container {
+  > [data-radiant-v2].input-base-module__container {
   border: none !important;
   padding-left: 14px;
   background: var(--grey-p7-color) !important;
@@ -174,4 +184,14 @@ button-module__primary/secondary: v2
 .bk-dropdown-item-info:hover > .bk-dropdown-text,
 .menu-module__itemInfo:hover > .menu-module__itemText > p {
   color: var(--icon-light-blue-color) !important;
+}
+
+/* filter chips pinboard v1 */
+
+.rd-chip.rd-chip-style-filter {
+  background: var(--grey-p9-color) !important;
+}
+
+.rd-chip.rd-chip-style-filter:hover {
+  border: none !important;
 }
