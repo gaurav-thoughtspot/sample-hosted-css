@@ -18,6 +18,36 @@
   --rough-n-tumble-color: #5a4949;
 }
 
+/* Font-family */
+
+@font-face {
+    font-family: 'HoneywellSansWeb';
+    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-Light.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HoneywellSansWeb';
+    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-LightItalic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HoneywellSansWeb';
+    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HoneywellSansWeb';
+    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+}
+
+body {
+  font-family: 'HoneywellSansWeb' !important;
+}
+
 /* Button
 bk/rd-button-primary/secondary :  v1
 button-module__primary/secondary: v2
