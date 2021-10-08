@@ -144,7 +144,7 @@ button-module__primary/secondary: v2
   color: var(--grey-p9-color);
 }
 
-/*select and filter chips
+/* select and filter chips
 .bk: v1
 .select-module: 
 rd-chip-wrapper: pinboard v1
@@ -229,7 +229,8 @@ chip-base-module: answer v2
   color: var(--icon-light-blue-color) !important;
 }
 
-/* filter chips pinboard v1 */
+/* filter chips pinboard v1 
+ */
 
 .rd-chip.rd-chip-style-filter {
   background: var(--grey-p9-color) !important;
@@ -239,10 +240,10 @@ chip-base-module: answer v2
   border: none !important;
 }
 
-/* search field
+/*  search field
 .bk-input-container: v1
 input-base-module: v2
-*/
+ */
 
 [data-radiant-v2] .input-base-module__container,
 .bk-input-container-inner {
@@ -285,4 +286,36 @@ input:placeholder-shown {
 [data-radiant-v2].icon-module__gray,
 .bk-input-container-inner .rd-icon-color-gray {
   fill: var(--grey-p5-color) !important;
+}
+
+/* table header
+  answerlist/pinboard list => v1
+*/
+
+/* checkbox alignment */
+.bk-select-all-checkbox {
+  padding-left: 13px !important;
+}
+
+ /* table header */
+ .bk-list-header{
+   padding: 0 !important;
+   height: 50px !important;
+  border: 2px solid var(--grey-p8-color)  !important;  
+  background:  var(--grey-p9-color) !important; 
+  font-weight: 800 !important; 
+  color: #303030 !important; 
+}
+
+/* verticle separater */
+.bk-column-title {
+  border-left: 2px solid var(--grey-p8-color)  !important;
+  text-align: center !important;
+  padding-left: 20px !important;
+  margin-right: 5px  !important;
+}
+
+/* data table content alignment */
+.bk-column{
+  padding-left: 15px !important;
 }
