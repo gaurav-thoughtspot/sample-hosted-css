@@ -16,36 +16,49 @@
   --icon-light-blue-color: #005eac;
   --light-sky-blue-color: rgba(136, 221, 255, 0.15);
   --rough-n-tumble-color: #5a4949;
+  --light-secondary: #606060;
 }
 
 /* Font-family */
 
 @font-face {
-    font-family: 'HoneywellSansWeb';
-    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-Light.ttf') format('truetype');
-    font-style: normal;
+  font-family: "HoneywellSansWeb";
+  src: url("https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-Light.ttf")
+    format("truetype");
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'HoneywellSansWeb';
-    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-LightItalic.ttf') format('truetype');
-    font-style: italic;
+  font-family: "HoneywellSansWeb";
+  src: url("https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-LightItalic.ttf")
+    format("truetype");
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'HoneywellSansWeb';
-    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-Medium.ttf') format('truetype');
-    font-style: normal;
+  font-family: "HoneywellSansWeb";
+  src: url("https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-Medium.ttf")
+    format("truetype");
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'HoneywellSansWeb';
-    src: url('https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-MediumItalic.ttf') format('truetype');
-    font-style: italic;
+  font-family: "HoneywellSansWeb";
+  src: url("https://raw.githubusercontent.com/gaurav-thoughtspot/sample-hosted-css/dev/HoneywellSansWeb-MediumItalic.ttf")
+    format("truetype");
+  font-style: italic;
 }
 
 body {
-  font-family: 'HoneywellSansWeb' !important;
+  font-family: "HoneywellSansWeb" !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "HoneywellSansWeb" !important;
 }
 
 /* Button
@@ -224,4 +237,52 @@ chip-base-module: answer v2
 
 .rd-chip.rd-chip-style-filter:hover {
   border: none !important;
+}
+
+/* search field
+.bk-input-container: v1
+input-base-module: v2
+*/
+
+[data-radiant-v2] .input-base-module__container,
+.bk-input-container-inner {
+  background: var(--grey-p7-color) !important;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 4px !important;
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+  color: var(--light-secondary) !important;
+  font-weight: 500 !important;
+}
+
+[data-radiant-v2] .input-base-module__container .input-base-module__input {
+  font-size: 16px !important;
+  padding-bottom: 3px !important;
+}
+
+[data-radiant-v2] .input-base-module__container:hover,
+.bk-input-container-inner:hover {
+  box-shadow: none !important;
+  border: 1px solid var(--icon-light-blue-color) !important;
+}
+
+/* remove blue bottom border */
+.bk-input-container-inner::after {
+  border-bottom: 1px solid transparent !important;
+}
+
+input:placeholder-shown {
+  font-style: italic !important;
+}
+
+[data-radiant-v2]
+  .input-base-module__container:hover
+  [data-radiant-v2].icon-module__gray,
+.bk-input-container-inner:hover .rd-icon-color-gray {
+  fill: var(--light-secondary) !important;
+}
+
+[data-radiant-v2].icon-module__gray,
+.bk-input-container-inner .rd-icon-color-gray {
+  fill: var(--grey-p5-color) !important;
 }
